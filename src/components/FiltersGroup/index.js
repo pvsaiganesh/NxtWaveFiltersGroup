@@ -24,7 +24,7 @@ const FiltersGroup = props => {
   return (
     <div className="filters-group-container">
       <h1>Filters Group</h1>
-      <input type="search" onKeyPress={getSearchValue} />
+      <input type="search" onKeyDown={getSearchValue} />
       <div>
         <h1>Category</h1>
         {categoryOptions.map(item => {
